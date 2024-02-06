@@ -2,12 +2,9 @@ import { categories } from "../data/categories";
 import Overlay from "../components/Overlay";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { BOX_WIDTH } from "../constants/index";
 
 const Categories = () => {
   const [shouldCategoryExpand, setShouldCategoryExpand] = useState(0);
-
-  const expandedBoxWidth = BOX_WIDTH * (categories.length - 1);
 
   return (
     <div className="w-screen h-screen flex">
@@ -17,10 +14,8 @@ const Categories = () => {
           to={`/categories${category.url}`}
           key={category.id}
           className={`h-full ${
-            index === shouldCategoryExpand
-              ? `w-[calc(100vw-${expandedBoxWidth}px)]`
-              : `w-[${BOX_WIDTH}px]`
-          } overflow-hidden relative transition-[width] duration-300 ease-in-out`}
+            index === shouldCategoryExpand ? "w-[40vw]" : "w-[20vw]"
+          } overflow-hidden relative`}
         >
           <img
             src={category.banner}
