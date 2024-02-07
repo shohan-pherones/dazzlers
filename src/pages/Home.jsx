@@ -1,6 +1,6 @@
+import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 import Slider from "../components/Slider";
-import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 
 const Home = () => {
   return (
