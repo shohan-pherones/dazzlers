@@ -10,9 +10,75 @@ export const categories = [
     items: [
       {
         id: 1,
-        image: "",
-        title: "",
-        description: "",
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 1",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 2,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 2",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 3,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 3",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 4,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 4",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 5,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 5",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 6,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 6",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 7,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 7",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 8,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 8",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 9,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 9",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
       },
     ],
   },
@@ -27,9 +93,75 @@ export const categories = [
     items: [
       {
         id: 1,
-        image: "",
-        title: "",
-        description: "",
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 1",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 2,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 2",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 3,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 3",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 4,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 4",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 5,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 5",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 6,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 6",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 7,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 7",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 8,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 8",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 9,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 9",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
       },
     ],
   },
@@ -44,9 +176,75 @@ export const categories = [
     items: [
       {
         id: 1,
-        image: "",
-        title: "",
-        description: "",
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 1",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 2,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 2",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 3,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 3",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 4,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 4",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 5,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 5",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 6,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 6",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 7,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 7",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 8,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 8",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 9,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 9",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
       },
     ],
   },
@@ -61,9 +259,75 @@ export const categories = [
     items: [
       {
         id: 1,
-        image: "",
-        title: "",
-        description: "",
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 1",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 2,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 2",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 3,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 3",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 4,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 4",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 5,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 5",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 6,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 6",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 7,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 7",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 8,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 8",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
+      },
+      {
+        id: 9,
+        image:
+          "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        title: "Blog 9",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, aliquam aspernatur exercitationem illum ea rerum eum inventore libero quo ab, voluptates facilis, quam sapiente laudantium soluta aperiam nam iure sit.",
       },
     ],
   },
