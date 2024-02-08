@@ -5,6 +5,7 @@ import NotFound from "./pages/NotFound";
 import CategoryItem from "./pages/CategoryItem";
 import BlogDetails from "./pages/BlogDetails";
 import Header from "./components/Header";
+import SavedBlogs from "./pages/SavedBlogs";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/categories" element={<Categories />} />
         <Route path="/categories/:catid" element={<CategoryItem />} />
         <Route path="/categories/:catid/:blogid" element={<BlogDetails />} />
+        <Route path="/saved" element={<SavedBlogs />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

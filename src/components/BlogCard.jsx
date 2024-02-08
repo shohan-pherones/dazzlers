@@ -43,7 +43,9 @@ const BlogCard = ({ blog, catid }) => {
 
         {!hasBeenSaved && (
           <button
-            onClick={() => dispatch({ type: "SAVE", payload: blog })}
+            onClick={() =>
+              dispatch({ type: "SAVE", payload: { ...blog, catid } })
+            }
             className="btn__secondary"
           >
             Save Thread
@@ -52,7 +54,9 @@ const BlogCard = ({ blog, catid }) => {
 
         {hasBeenSaved && (
           <button
-            onClick={() => dispatch({ type: "REMOVE", payload: blog })}
+            onClick={() =>
+              dispatch({ type: "REMOVE", payload: { ...blog, catid } })
+            }
             className="btn"
           >
             Remove Thread
