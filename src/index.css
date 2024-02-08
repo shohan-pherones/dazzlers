@@ -14,4 +14,8 @@
   .btn__tertiary {
     @apply text-white bg-black px-5 py-2.5 rounded-xl hover:bg-black/80 transition duration-300 ease-in-out;
   }
+
+  .btn__outline {
+    @apply bg-transparent px-5 py-2.5 rounded-xl hover:bg-black/10 border border-black transition duration-300 ease-in-out text-black;
+  }
 }

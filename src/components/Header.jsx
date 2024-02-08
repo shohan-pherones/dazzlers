@@ -7,9 +7,10 @@ import {
   X,
   Youtube,
 } from "lucide-react";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, useResolvedPath } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import { BlogContext } from "../contexts/BlogContext";
 
 const navItems = [
   { label: "Home", url: "/" },
@@ -21,6 +22,7 @@ const navItems = [
 
 const Header = () => {
   const [shouldNavAppear, setShouldNavAppear] = useState(false);
+  const [state, dispatch] = useContext(BlogContext);
 
   const { pathname } = useResolvedPath();
 
@@ -50,59 +52,66 @@ const Header = () => {
 
       <AnimatePresence>
         {shouldNavAppear && (
-          <motion.div
-            onClick={() => setShouldNavAppear(false)}
-            initial={{ x: "25vw" }}
-            whileInView={{ x: 0 }}
-            exit={{ x: "25vw" }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="fixed right-0 top-0 bottom-0 w-[25vw] h-full bg-white z-[101] shadow-2xl"
-          >
-            <button
+          <>
+            <div
               onClick={() => setShouldNavAppear(false)}
-              className="top-10 right-10 absolute z-[102]"
+              className="fixed top-0 left-0 right-0 bottom-0 w-full h-full bg-transparent z-[100]"
+            ></div>
+            <motion.div
+              onClick={() => setShouldNavAppear(false)}
+              initial={{ x: "25vw" }}
+              whileInView={{ x: 0 }}
+              exit={{ x: "25vw" }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="fixed right-0 top-0 bottom-0 w-[25vw] h-full bg-white z-[101] shadow-2xl"
             >
-              <X size={18} />
-            </button>
+              <button
+                onClick={() => setShouldNavAppear(false)}
+                className="top-10 right-10 absolute z-[102]"
+              >
+                <X size={18} />
+              </button>
 
-            <div className="px-10 py-20 flex flex-col gap-5 items-start">
-              <p className="uppercase text-sm font-semibold tracking-widest text-gray-400 border-b w-full pb-2.5">
-                Navigations
-              </p>
-              {navItems.map((item) => (
-                <Link
-                  key={item.url}
-                  to={item.url}
-                  className="text-3xl font-semibold text-gray-700"
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </div>
-
-            <div className="px-10 py-20 mt-40 flex flex-col gap-5 items-start">
-              <p className="uppercase text-sm font-semibold tracking-widest text-gray-400 border-b w-full pb-2.5">
-                Socials
-              </p>
-              <div className="flex items-center gap-5 text-gray-700">
-                <Link to="/" target="_blank">
-                  <Facebook size={24} />
-                </Link>
-                <Link to="/" target="_blank">
-                  <Instagram size={24} />
-                </Link>
-                <Link to="/" target="_blank">
-                  <Twitter size={24} />
-                </Link>
-                <Link to="/" target="_blank">
-                  <Linkedin size={24} />
-                </Link>
-                <Link to="/" target="_blank">
-                  <Youtube size={24} />
-                </Link>
+              <div className="px-10 py-20 flex flex-col gap-5 items-start">
+                <p className="uppercase text-sm font-semibold tracking-widest text-gray-400 border-b w-full pb-2.5">
+                  Navigations
+                </p>
+                {navItems.map((item) => (
+                  <Link
+                    key={item.url}
+                    to={item.url}
+                    className="text-3xl font-semibold text-gray-700"
+                  >
+                    {item.label}{" "}
+                    {item.url === "/saved" && `(${state?.blogs?.length})`}
+                  </Link>
+                ))}
               </div>
-            </div>
-          </motion.div>
+
+              <div className="px-10 py-20 mt-40 flex flex-col gap-5 items-start">
+                <p className="uppercase text-sm font-semibold tracking-widest text-gray-400 border-b w-full pb-2.5">
+                  Socials
+                </p>
+                <div className="flex items-center gap-5 text-gray-700">
+                  <Link to="/" target="_blank">
+                    <Facebook size={24} />
+                  </Link>
+                  <Link to="/" target="_blank">
+                    <Instagram size={24} />
+                  </Link>
+                  <Link to="/" target="_blank">
+                    <Twitter size={24} />
+                  </Link>
+                  <Link to="/" target="_blank">
+                    <Linkedin size={24} />
+                  </Link>
+                  <Link to="/" target="_blank">
+                    <Youtube size={24} />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </>

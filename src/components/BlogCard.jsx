@@ -1,6 +1,21 @@
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { BlogContext } from "../contexts/BlogContext";
 
 const BlogCard = ({ blog, catid }) => {
+  const [hasBeenSaved, setHasBeenSaved] = useState(false);
+  const [state, dispatch] = useContext(BlogContext);
+
+  useEffect(() => {
+    const isExist = state.blogs.some((bl) => bl.id === blog.id);
+
+    if (isExist) {
+      setHasBeenSaved(true);
+    } else {
+      setHasBeenSaved(false);
+    }
+  }, [state]);
+
   return (
     <div className="w-full p-5 rounded-2xl bg-white flex flex-col gap-5 shadow-md">
       <Link
@@ -22,10 +37,27 @@ const BlogCard = ({ blog, catid }) => {
       </div>
 
       <div className="flex items-center justify-between">
-        <Link to={`/categories${catid}/${blog.id}`} className="btn">
+        <Link to={`/categories${catid}/${blog.id}`} className="btn__tertiary">
           Read More
         </Link>
-        <button className="btn__secondary">Save Thread</button>
+
+        {!hasBeenSaved && (
+          <button
+            onClick={() => dispatch({ type: "SAVE", payload: blog })}
+            className="btn__secondary"
+          >
+            Save Thread
+          </button>
+        )}
+
+        {hasBeenSaved && (
+          <button
+            onClick={() => dispatch({ type: "REMOVE", payload: blog })}
+            className="btn"
+          >
+            Remove Thread
+          </button>
+        )}
       </div>
     </div>
   );

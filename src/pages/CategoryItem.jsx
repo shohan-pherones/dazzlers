@@ -42,7 +42,7 @@ const CategoryItem = () => {
         <div className="flex justify-center">
           <button
             onClick={() => setShouldAllItemsAppear(true)}
-            className="btn__tertiary"
+            className="btn__outline"
           >
             Load More
           </button>
@@ -53,7 +53,7 @@ const CategoryItem = () => {
         <div className="flex justify-center">
           <button
             onClick={() => setShouldAllItemsAppear(false)}
-            className="btn__tertiary"
+            className="btn__outline"
           >
             Collapse Items
           </button>
