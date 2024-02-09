@@ -8,7 +8,7 @@ const Home = () => {
       <Slider />
       {/* HERO TEXT CONTENTS */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[3] flex flex-col gap-5 items-center">
-        <h1 className="text-7xl text-white font-bold text-center">
+        <h1 className="text-5xl sm:text-7xl text-white font-bold text-center">
           Lorem ipsum dolor sit amet, consectetur adipisicing.
         </h1>
         <Link to="/categories" className="btn">
@@ -16,7 +16,7 @@ const Home = () => {
         </Link>
       </div>
       {/* SOCIAL LINKS */}
-      <div className="absolute bottom-20 right-20 z-[3] flex items-center gap-5">
+      <div className="hidden absolute bottom-20 right-20 z-[3] md:flex items-center gap-5">
         <Link to="/" target="_blank">
           <Facebook color="white" size={24} />
         </Link>

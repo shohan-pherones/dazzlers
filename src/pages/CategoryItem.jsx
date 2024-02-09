@@ -16,7 +16,7 @@ const CategoryItem = () => {
   }
 
   return (
-    <div className="container mx-auto p-20">
+    <div className="container mx-auto px-5 sm:px-20 py-20">
       <SectionHeader
         heading={categoryItem.title}
         subHeading={categoryItem.description}

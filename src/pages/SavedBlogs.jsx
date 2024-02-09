@@ -7,7 +7,7 @@ const SavedBlogs = () => {
   const [state, dispatch] = useContext(BlogContext);
 
   return (
-    <div className="container mx-auto p-20">
+    <div className="container mx-auto px-5 sm:px-20 py-20">
       <SectionHeader
         heading={`Saved Items (${state?.blogs?.length})`}
         subHeading="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo itaque minus illo recusandae molestias mollitia ullam sit impedit laborum! Iure recusandae eos nulla perferendis modi!"

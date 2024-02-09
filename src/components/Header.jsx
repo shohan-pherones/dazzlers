@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <>
       <div
-        className={`fixed z-[100] left-1/2 -translate-x-1/2 top-10 w-full container px-20 flex items-center ${
+        className={`fixed z-[100] left-1/2 -translate-x-1/2 top-10 w-full container px-5 sm:px-20 flex items-center ${
           pathname === "/" ? "justify-center" : "justify-between"
         }`}
       >
@@ -59,11 +59,11 @@ const Header = () => {
             ></div>
             <motion.div
               onClick={() => setShouldNavAppear(false)}
-              initial={{ x: "25vw" }}
+              initial={{ x: "100%" }}
               whileInView={{ x: 0 }}
-              exit={{ x: "25vw" }}
+              exit={{ x: "100%" }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="fixed right-0 top-0 bottom-0 w-[25vw] h-full bg-white z-[101] shadow-2xl"
+              className="fixed right-0 top-0 bottom-0 w-screen sm:w-[50vw] lg:w-[35vw] xl:w-[25vw] h-full bg-white z-[101] shadow-2xl"
             >
               <button
                 onClick={() => setShouldNavAppear(false)}
@@ -88,7 +88,7 @@ const Header = () => {
                 ))}
               </div>
 
-              <div className="px-10 py-20 mt-40 flex flex-col gap-5 items-start">
+              <div className="px-10 py-20 mt-20 sm:mt-40 flex flex-col gap-5 items-start">
                 <p className="uppercase text-sm font-semibold tracking-widest text-gray-400 border-b w-full pb-2.5">
                   Socials
                 </p>
