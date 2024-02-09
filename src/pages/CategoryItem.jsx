@@ -27,14 +27,24 @@ const CategoryItem = () => {
           !shouldAllItemsAppear &&
           categoryItem.items
             .slice(0, 8)
-            .map((item) => (
-              <BlogCard key={item.id} blog={item} catid={categoryItem.url} />
+            .map((item, index) => (
+              <BlogCard
+                key={item.id}
+                blog={item}
+                index={index}
+                catid={categoryItem.url}
+              />
             ))}
 
         {categoryItem.items.length > 0 &&
           shouldAllItemsAppear &&
-          categoryItem.items.map((item) => (
-            <BlogCard key={item.id} blog={item} catid={categoryItem.url} />
+          categoryItem.items.map((item, index) => (
+            <BlogCard
+              key={item.id}
+              blog={item}
+              index={index}
+              catid={categoryItem.url}
+            />
           ))}
       </div>
 

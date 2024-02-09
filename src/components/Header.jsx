@@ -29,25 +29,34 @@ const Header = () => {
   return (
     <>
       <div
-        className={`fixed z-[100] left-1/2 -translate-x-1/2 top-10 w-full container px-5 sm:px-20 flex items-center ${
+        className={`overflow-hidden fixed z-[100] left-1/2 -translate-x-1/2 top-10 w-full container px-5 sm:px-20 flex items-center ${
           pathname === "/" ? "justify-center" : "justify-between"
         }`}
       >
-        <Link
-          to="/"
-          className={`text-2xl lowercase font-semibold bg-white/80 backdrop-blur-lg px-5 py-2.5 rounded-xl border ${
-            pathname === "/" ? "hidden" : "inline-block"
-          }`}
+        <motion.div
+          initial={{ y: "-100%" }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 0.75, ease: "easeInOut" }}
         >
-          Dazzlers<span className="text-cyan-600">.</span>
-        </Link>
+          <Link
+            to="/"
+            className={`text-2xl lowercase font-semibold bg-white/80 backdrop-blur-lg px-5 py-2.5 rounded-xl border ${
+              pathname === "/" ? "hidden" : "inline-block"
+            }`}
+          >
+            Dazzlers<span className="text-cyan-600">.</span>
+          </Link>
+        </motion.div>
 
-        <button
+        <motion.button
+          initial={{ y: "-100%" }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 0.75, ease: "easeInOut" }}
           onClick={() => setShouldNavAppear(!shouldNavAppear)}
           className="w-10 aspect-square bg-white/80 backdrop-blur-lg rounded-full flex items-center justify-center border"
         >
           <AlignJustify size={18} />
-        </button>
+        </motion.button>
       </div>
 
       <AnimatePresence>
@@ -76,14 +85,24 @@ const Header = () => {
                 <p className="uppercase text-sm font-semibold tracking-widest text-gray-400 border-b w-full pb-2.5">
                   Navigations
                 </p>
-                {navItems.map((item) => (
+                {navItems.map((item, index) => (
                   <Link
                     key={item.url}
                     to={item.url}
-                    className="text-3xl font-semibold text-gray-700"
+                    className="text-3xl font-semibold text-gray-700 overflow-hidden"
                   >
-                    {item.label}{" "}
-                    {item.url === "/saved" && `(${state?.blogs?.length})`}
+                    <motion.div
+                      initial={{ y: "100%" }}
+                      whileInView={{ y: 0 }}
+                      transition={{
+                        duration: 0.5,
+                        ease: "easeInOut",
+                        delay: 0.125 * index,
+                      }}
+                    >
+                      {item.label}{" "}
+                      {item.url === "/saved" && `(${state?.blogs?.length})`}
+                    </motion.div>
                   </Link>
                 ))}
               </div>
